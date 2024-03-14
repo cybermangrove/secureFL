@@ -36,10 +36,16 @@ You can try different `--alpha` (data distribution), `--num_users`(number of par
 
 For `Synthetic` dataset, you can run the following code to generate it. But, a dataset has already been generated in the data/synthetic folder for usage.
 
-### Pure Federated Learning (i.e., source inference attacks towards pure federated learning)
+### Pure Federated Learning without any attacking or defending
 
 ```python
-python main_fed_pure.py --dataset=Synthetic --model=mlp --alpha=1 --num_users=10 --local_ep=5
+python main_fed.py --dataset=Synthetic --model=mlp --alpha=1 --num_users=10 --local_ep=5
+```
+
+### Federated Learning with Source Inference Attacks
+
+```python
+python main_fed_sia.py --dataset=Synthetic --model=mlp --alpha=1 --num_users=10 --local_ep=5
 ```
 
 ### Federated Learning with Homomorphic Encryption
