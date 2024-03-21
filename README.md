@@ -16,6 +16,8 @@ The threat model is based on the attacking method mentioned in the paper "Source
 The selection strategy for these high-risk model parameters (i.e., high-risk proportion of the model's parameters) is critical. While traditional ideas may rely on the absolute values or the absolute changes (delta values) of the parameters, our framework introduces an innovative approach by evaluating the parameters' propensity, from the perspective of the adversary, to contribute to the Attack Success Rate (ASR) of SIA in the FL context, where the adversary acts as the honest but curious server. By assessing which parameters most significantly affect the loss function in the context of SIA, we can identify those parameters as high-risk.
 
 ### Environment Setup
+This is the python and pip version I run, it might be able to run with other python/pip versions. Of course you need to use pip to install some dependencies like numpy.
+
 ```python
 python --version
 3.9.18
@@ -25,9 +27,11 @@ pip --version
 23.3.1
 ```
 
-You can run the following code to implement the source inference attacks. 
+Notice: If you just want to run for a test, you can reduce the variable "duplication" to 1 for a quicker end of the programs.
 
-### Data generation
+Now, you can run the following code to play with the code. 
+
+### Data generation (not necessary to run, as the there is a dataset alread in the repo, but you can later generate your own for other tests)
 ```python
 python generate_synthetic.py
 ```
