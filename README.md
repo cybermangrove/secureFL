@@ -1,4 +1,4 @@
-###Improving Privacy in Federated Learning Against Source Inference Attacks
+#Improving Privacy in Federated Learning Against Source Inference Attacks
 
 ### Core Idea
 We propose a framework that combines homomorphic encryption (HE) and local differential privacy (LDP) for federated learning (FL). HE protects high-risk model parameters, while LDP secures less sensitive weights. Our approach aims to boost FL security against inference attacks without major performance drawbacks. The framework uses a selection strategy to identify vulnerable model parameters and applies HE only where necessary, enhancing efficiency. Additionally, LDP noise is added to low-risk parameters, and random shuffling improves privacy further.
